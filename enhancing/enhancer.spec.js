@@ -1,12 +1,18 @@
 const { succeed, fail, repair, get  } = require('./enhancer.js');
 // test away!
 
+let item = (num, num2) => {return {
+    name: 'KungFu Ninja Expert',
+    durability: num,
+    enhancement: num2
+}};
+
 describe('enhancing game items', () => {
-    let item = (num, num2) => {return {
-        name: 'KungFu Ninja Expert',
-        durability: num,
-        enhancement: num2
-    }};
+    // let item = (num, num2) => {return {
+    //     name: 'KungFu Ninja Expert',
+    //     durability: num,
+    //     enhancement: num2
+    // }};
     
     // accepts an item object and returns a new item with the durability restored to 100
     describe('repair durability', () => {
